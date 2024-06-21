@@ -6,6 +6,9 @@
 \usage{
 replext()
 }
+\value{
+A Shiny app object which can be run to start the application.
+}
 \description{
 This application attempts to replicate and extend the simulation results from
 the paper by Dwivedi et al. (2017). The application includes a user interface
@@ -15,7 +18,6 @@ and handle user interactions.
 \details{
 The app's user interface consists of:
 \itemize{
-\item A numeric input for setting an optional random number seed.
 \item A dropdown menu to select a cell block for the simulation, which is
 populated using the \code{getCellBlocks} function.
 \item Dynamic UI elements for inputting simulation parameters, generated
@@ -40,5 +42,7 @@ if(interactive()){
 
 }
 \references{
-Dwivedi AK, Mallawaarachchi I, Alvarado LA. Analysis of small sample size studies using nonparametric bootstrap test with pooled resampling method. Stat Med. 2017 Jun 30;36(14):2187-2205. doi: 10.1002/sim.7263. Epub 2017 Mar 9. PMID: 28276584.
+Dwivedi AK, Mallawaarachchi I, Alvarado LA. Analysis of small sample size studies
+using nonparametric bootstrap test with pooled resampling method. Stat Med. 2017
+Jun 30;36(14):2187-2205. doi: 10.1002/sim.7263. Epub 2017 Mar 9. PMID: 28276584.
 }

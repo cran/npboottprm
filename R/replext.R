@@ -7,7 +7,6 @@
 #'
 #' @details
 #' The app's user interface consists of:
-#' - A numeric input for setting an optional random number seed.
 #' - A dropdown menu to select a cell block for the simulation, which is
 #'   populated using the `getCellBlocks` function.
 #' - Dynamic UI elements for inputting simulation parameters, generated
@@ -22,8 +21,12 @@
 #' - Rendering a table to display the simulation results.
 #' - Handling the data download request and exporting the results as a CSV file.
 #'
+#' @return A Shiny app object which can be run to start the application.
+#'
 #' @references
-#' Dwivedi AK, Mallawaarachchi I, Alvarado LA. Analysis of small sample size studies using nonparametric bootstrap test with pooled resampling method. Stat Med. 2017 Jun 30;36(14):2187-2205. doi: 10.1002/sim.7263. Epub 2017 Mar 9. PMID: 28276584.
+#' Dwivedi AK, Mallawaarachchi I, Alvarado LA. Analysis of small sample size studies
+#' using nonparametric bootstrap test with pooled resampling method. Stat Med. 2017
+#' Jun 30;36(14):2187-2205. doi: 10.1002/sim.7263. Epub 2017 Mar 9. PMID: 28276584.
 #'
 #' @examples
 #' if(interactive()){
@@ -38,7 +41,6 @@ replext <- function() {
     shiny::titlePanel("Replext Simulation"),
     shiny::sidebarLayout(
       shiny::sidebarPanel(
-        shiny::numericInput("seed", "Random Number Seed (Optional):", value = NA, min = 1),
         shiny::selectInput("cellBlock", "Select Cell Block:",
                            choices = getCellBlocks()),
         shiny::uiOutput("paramsUI"),

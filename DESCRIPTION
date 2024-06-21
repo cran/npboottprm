@@ -1,6 +1,6 @@
 Package: npboottprm
 Title: Nonparametric Bootstrap Test with Pooled Resampling
-Version: 0.2.1
+Version: 0.3.0
 Authors@R: c(
     person("Mackson", "Ncube", , "macksonncube.stats@gmail.com", role = c("aut", "cre")),
     person("mightymetrika, LLC", role = c("cph", "fnd"))
@@ -30,12 +30,12 @@ Suggests: testthat (>= 3.0.0)
 Config/testthat/edition: 3
 Depends: R (>= 2.10)
 LazyData: true
-Imports: DT, fGarch, ggplot2, lmPerm, MASS, MKinfer, shiny,
-        shinythemes, sn
+Imports: DT, fGarch, ggplot2, lmPerm, MASS, MKinfer, pool, RPostgres,
+        shiny, shinythemes, sn
 NeedsCompilation: no
-Packaged: 2024-02-23 16:30:25 UTC; Administrator
+Packaged: 2024-06-21 02:30:49 UTC; Administrator
 Author: Mackson Ncube [aut, cre],
   mightymetrika, LLC [cph, fnd]
 Maintainer: Mackson Ncube <macksonncube.stats@gmail.com>
 Repository: CRAN
-Date/Publication: 2024-02-23 17:00:06 UTC
+Date/Publication: 2024-06-21 04:40:21 UTC

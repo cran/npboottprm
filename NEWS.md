@@ -1,3 +1,10 @@
+# npboottprm 0.3.0
+
+# npboottprm 0.3.0
+
+* Added replext_pgsql(), a version of replext() which connects to a PostgreSQL
+database
+
 # npboottprm 0.2.1
 
 # npboottprm 0.2.0
